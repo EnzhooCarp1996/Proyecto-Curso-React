@@ -4,11 +4,13 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
 import { Header } from "./components/Header/Header";
 import { Footer } from "./components/Footer/Footer";
+import { CartProvider } from "./context/CartContext/CartProvider";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <CartProvider>
         <div>
           <Header/>
 
@@ -22,6 +24,7 @@ function App() {
           
           <Footer/>
         </div>
+        </CartProvider>
       </BrowserRouter>
     </>
   );
