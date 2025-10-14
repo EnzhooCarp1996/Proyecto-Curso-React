@@ -1,0 +1,19 @@
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* 👈 por defecto: 1 columna en móviles */
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+@media (min-width: 600px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr); /* 👈 tablets: 2 columnas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .items-grid {
+    grid-template-columns: repeat(3, 1fr); /* 👈 desktop: 3 columnas */
+  }
+}

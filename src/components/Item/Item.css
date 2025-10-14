@@ -1,0 +1,73 @@
+/* Card */
+article {
+  display: flex;
+  flex-direction: column; /* Siempre vertical */
+  justify-content: space-between; /* 👈 reparte espacio entre contenido y botón */
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  margin: 0 auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen */
+article img {
+  width: 100%; /* ocupa todo el ancho de la tarjeta */
+  height: 180px; /* 👈 altura fija para todas las imágenes */
+  border-radius: 8px;
+  object-fit: cover; /* recorta para mantener proporción sin deformar */
+  margin-bottom: 0.5rem;
+}
+
+/* Contenedor de texto + botón */
+article .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 👈 mantiene botón abajo */
+  flex-grow: 1; /* 👈 se expande para rellenar espacio */
+  width: 100%;
+  gap: 0.5rem;
+}
+
+/* Título */
+.product-tittle {
+  font-size: 1.1rem; /* 👈 un poquito más compacto */
+  font-weight: 600;
+  color: #333;
+  margin: 0.3rem 0;
+}
+
+/* Texto */
+article p {
+  margin: 0.2rem 0;
+  color: #555;
+  font-size: 0.9rem;
+  flex-grow: 1; /* 👈 ocupa espacio intermedio */
+}
+
+/* Botón */
+article button {
+  margin-top: auto; /* 👈 siempre al final del contenedor */
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: #0077ff;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+article button:hover {
+  background: #005fcc;
+}
