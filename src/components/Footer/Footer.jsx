@@ -1,7 +1,11 @@
+import "./Footer.css"
+
 export const Footer = () => {
   return (
-    <footer>
-      <p>Pagina de Enzo</p>
+    <footer className="footer">
+      <div className="footer-content">
+        <p>© {new Date().getFullYear()} Página de Enzo</p>
+      </div>
     </footer>
   );
 };

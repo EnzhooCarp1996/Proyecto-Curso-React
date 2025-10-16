@@ -15,10 +15,8 @@ function App() {
           <Header/>
 
           <Routes>
-            <Route
-              path="/"
-              element={<ItemListContainer titulo={"Bienvenidos"} />}
-            />
+            <Route path="/" element={<ItemListContainer titulo={"Bienvenidos"} />} />
+            <Route path="/carrito" element={<ItemListContainer titulo={"Carrito"} />} />
             <Route path="/detail/:id" element={<ItemDetailContainer />} />
           </Routes>
           
