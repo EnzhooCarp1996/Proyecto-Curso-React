@@ -1,0 +1,56 @@
+.login-form {
+  width: 320px;
+  margin: 100px auto;        /* centra vertical y horizontal */
+  padding: 24px;
+  border-radius: 12px;
+  background: #ffffff10;     /* semi transparente si tu fondo es oscuro */
+  backdrop-filter: blur(6px);
+  border: 1px solid #ffffff30;
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;               /* ajustalo según tu fondo */
+}
+
+.login-form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  margin-bottom: 5px;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #1b1b1b;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #646cff;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #535bf2;
+}

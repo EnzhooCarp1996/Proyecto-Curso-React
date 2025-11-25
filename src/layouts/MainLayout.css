@@ -1,0 +1,6 @@
+.main-content {
+  flex: 1;                /* Ocupa todo el espacio disponible */
+  padding: 20px;          /* Separación opcional */
+  box-sizing: border-box; 
+  width: 100%;
+}
